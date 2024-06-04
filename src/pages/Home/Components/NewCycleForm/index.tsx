@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { useFormContext } from 'react-hook-form'
 import { CyclesContext } from '../../../../contexts/CyclesContext'
 
-const NewCycleForm: React.FC = () => {
+export function NewCycleForm() {
   const { activeCycle } = useContext(CyclesContext)
   const { register } = useFormContext()
 
@@ -34,5 +34,3 @@ const NewCycleForm: React.FC = () => {
     </FormContainer>
   )
 }
-
-export default NewCycleForm
